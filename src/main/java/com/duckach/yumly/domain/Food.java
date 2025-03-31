@@ -1,0 +1,21 @@
+package com.duckach.yumly.domain;
+
+import jakarta.persistence.*;
+import lombok.NoArgsConstructor;
+
+@Entity
+@Table(name = "FOOD")
+@NoArgsConstructor
+public class Food {
+    @Id @GeneratedValue(strategy = GenerationType.AUTO)
+    @Column(name = "FOOD_ID")
+    private int foodId;
+
+    @Column(name = "FOOD_NAME")
+    private String foodName;
+
+    public Food(int foodId, String foodName) {
+        this.foodId = foodId;
+        this.foodName = foodName;
+    }
+}
