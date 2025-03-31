@@ -14,8 +14,7 @@ public class Food {
     @Column(name = "FOOD_NAME")
     private String foodName;
 
-    public Food(int foodId, String foodName) {
-        this.foodId = foodId;
+    public Food(String foodName) {
         this.foodName = foodName;
     }
 }
