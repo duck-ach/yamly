@@ -34,7 +34,7 @@ public class FoodController {
         return "food/addFood";
     }
 
-    @PostMapping("saveFood")
+    @PostMapping("/saveFood")
     public String saveFood(HttpServletRequest request, HttpServletResponse response) {
 
         return "food/addFood";
