@@ -39,7 +39,7 @@ public class FoodServiceImpl implements FoodService {
         List<String> tagNames = List.of(request.getParameterValues("tagNames"));
 
         // 기존 TAG 조회
-        List<Tag> existingTags = tagRepository.findAllByTagName(tagNames);
+        List<Tag> existingTags = tagRepository.findAllByTagNameIn(tagNames);
         Set<String> existingTagNames = existingTags.stream().map(Tag::getTagName).collect(Collectors.toSet());
         // 없는 TAG 추가
         Set<Tag> allTags = new HashSet<>(existingTags);
