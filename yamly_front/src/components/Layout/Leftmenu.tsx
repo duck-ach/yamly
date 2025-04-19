@@ -14,7 +14,7 @@ const menuItems = [
 const LeftMenu: React.FC = () => {
   return (
     <>
-      <div className="w-60 h-screen bg-white border-r shadow-sm p-4">
+      <div className="w-64 h-full h-screen bg-white border-r shadow-sm p-4">
         <h2 className="text-xl font-bold mb-6">🍽 메뉴 추천</h2>
         <ul className="space-y-4">
           {menuItems.map((item) => (
