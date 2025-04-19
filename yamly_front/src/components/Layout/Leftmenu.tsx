@@ -7,7 +7,7 @@ const menuItems = [
   { name: "오늘의 메뉴 추천", path: "/today", icon: <Star size={18} /> },
   { name: "실시간 인기 메뉴", path: "/trending", icon: <Flame size={18} /> },
   { name: "상황별 메뉴 추천", path: "/situations", icon: <Tag size={18} /> },
-  { name: "메뉴 정하기 게임", path: "/game", icon: <Gamepad size={18} /> },
+  { name: "메뉴 정하기 게임", path: "/games", icon: <Gamepad size={18} /> },
   { name: "메뉴 추천 커뮤니티", path: "/community", icon: <Users size={18} /> },
 ];
 
@@ -15,7 +15,6 @@ const LeftMenu: React.FC = () => {
   return (
     <>
       <div className="w-64 h-full h-screen bg-white border-r shadow-sm p-4">
-        <h2 className="text-xl font-bold mb-6">🍽 메뉴 추천</h2>
         <ul className="space-y-4">
           {menuItems.map((item) => (
             <li key={item.path}>
