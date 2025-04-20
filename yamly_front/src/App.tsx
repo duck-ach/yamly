@@ -4,6 +4,8 @@ import TopMenu from "./components/Layout/Topmenu";
 import TodayMain from "./components/Pages/TodayMenu/TodayMain";
 import GamesMain from "./components/Pages/Games/GamesMain";
 import CommunityMain from "./components/Pages/Community/CommunityMain";
+import MyPageMain from "./components/Pages/MyPage/MypageMain";
+import SettingMain from "./components/Pages/Setting/SettingMain";
 
 function App() {
   return (
@@ -17,6 +19,8 @@ function App() {
               <Route path="/" element={<TodayMain />} />
               <Route path="/games" element={<GamesMain />} />
               <Route path="/community" element={<CommunityMain />} />
+              <Route path="/mypage" element={<MyPageMain />} />
+              <Route path="/setting" element={<SettingMain />} />
             </Routes>
           </main>
         </div>

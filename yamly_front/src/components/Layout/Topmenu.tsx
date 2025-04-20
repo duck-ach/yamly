@@ -1,11 +1,19 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Logo from "../Logo/Logo";
+import { useNavigate } from "react-router-dom";
 
 const TopMenu = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const handleToggle = () => setIsMenuOpen((prev) => !prev);
+
+  const navigate = useNavigate();
+
+  const handleGoTo = (path: string) => {
+    setIsMenuOpen(false);
+    navigate(path);
+  };
 
   return (
     <header className="w-full h-16 bg-white flex items-center justify-between px-6 shadow">
@@ -29,10 +37,16 @@ const TopMenu = () => {
               exit={{ opacity: 0, y: -5 }}
               className="absolute right-0 mt-2 w-40 bg-white rounded shadow-lg py-2 z-10"
             >
-              <button className="block w-full text-left px-4 py-2 hover:bg-gray-100">
+              <button
+                onClick={() => handleGoTo("/mypage")}
+                className="block w-full text-left px-4 py-2 hover:bg-gray-100"
+              >
                 My Page
               </button>
-              <button className="block w-full text-left px-4 py-2 hover:bg-gray-100">
+              <button
+                onClick={() => handleGoTo("/setting")}
+                className="block w-full text-left px-4 py-2 hover:bg-gray-100"
+              >
                 Setting
               </button>
               <button className="block w-full text-left px-4 py-2 hover:bg-gray-100 text-red-500">
