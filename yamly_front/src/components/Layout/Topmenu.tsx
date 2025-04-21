@@ -16,7 +16,7 @@ const TopMenu = () => {
   };
 
   return (
-    <header className="w-full h-16 bg-white flex items-center justify-between px-6 shadow">
+    <header className="w-full h-16 bg-gray-50 flex items-center justify-between px-6 shadow">
       {/* 로고 */}
       <Logo />
 
