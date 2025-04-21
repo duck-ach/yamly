@@ -4,8 +4,8 @@ import TopMenu from "./components/Layout/Topmenu";
 import TodayMain from "./components/Pages/TodayMenu/TodayMain";
 import GamesMain from "./components/Pages/Games/GamesMain";
 import CommunityMain from "./components/Pages/Community/CommunityMain";
-import MyPageMain from "./components/Pages/MyPage/MypageMain";
 import SettingMain from "./components/Pages/Setting/SettingMain";
+import MyPageMain from "./components/Pages/MyPage/MyPageMain";
 
 function App() {
   return (
