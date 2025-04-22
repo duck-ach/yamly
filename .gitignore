@@ -68,12 +68,6 @@ atlassian-ide-plugin.xml
 # SonarLint plugin
 .idea/sonarlint/
 
-# Crashlytics plugin (for Android Studio and IntelliJ)
-com_crashlytics_export_strings.xml
-crashlytics.properties
-crashlytics-build.properties
-fabric.properties
-
 # Editor-based Rest Client
 .idea/httpRequests
 
@@ -120,13 +114,6 @@ fabric.properties
 .AppleDouble
 .LSOverride
 
-# Icon must end with two \r
-Icon
-
-
-# Thumbnails
-._*
-
 # Files that might appear in the root of a volume
 .DocumentRevisions-V100
 .fseventsd
@@ -153,15 +140,6 @@ Temporary Items
 logs
 **/*.backup.*
 **/*.back.*
-
-node_modules
-bower_components
-
-*.sublime*
-
-psd
-thumb
-sketch
 
 ### Windows ###
 # Windows thumbnail cache files
