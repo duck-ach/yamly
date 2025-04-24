@@ -1,8 +1,9 @@
+import Vote from "./Vote/Vote";
+
 const CommunityMain = () => {
   return (
     <>
-      <h2>CommunityMain</h2>
-      <div>Hello CommunityMain!!</div>
+      <Vote />
     </>
   );
 };
