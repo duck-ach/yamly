@@ -22,13 +22,13 @@ const LeftMenu: React.FC = () => {
           const isHighlighted = isHovered || (!hoveredPath && isActive);
           const sizeClass = isHighlighted ? "w-36 h-36 scale-110" : "w-36 h-36";
           const styleClass = isHighlighted
-            ? "border-2 border-white rounded-lg bg-white shadow-sm"
+            ? "border-2 border-white rounded-lg bg-white shadow-sm transition-all duration-200"
             : "";
 
           return (
             <li
               key={item.path}
-              className={`${sizeClass} ${styleClass} transition-all duration-200`}
+              className={`${sizeClass} ${styleClass}  `}
               onMouseEnter={() => setHoveredPath(item.path)}
               onMouseLeave={() => setHoveredPath(null)}
             >
