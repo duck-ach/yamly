@@ -1,21 +1,17 @@
+import { Link } from "react-router-dom";
+
 const BoardNavigator = () => {
   // TODO : Hover 이벤트 추가하기
   // TODO : 게시판 별 네비게이션 선택에 따라 Router 이동 이벤트 추가하기
   return (
     <>
-      <nav className="bg-white shadow-md p-4">
+      <nav className="bg-white rounded-md p-4 pl-6">
         <div className="container mx-auto flex justify-between items-center">
-          <ul className="hidden md:flex space-x-6 text-gray-700 font-medium">
-            <li>
-              <a href="#">100 ℃ 에서 구워진</a>
-            </li>
-            <li>
-              <a href="#">지역별 맛집 자랑</a>
-            </li>
-            <li>
-              <a href="#">레시피 일기장</a>
-            </li>
-          </ul>
+          <div className="hidden md:flex space-x-6 text-gray-700 font-medium">
+            <Link to="/hotBoard" className="text-blue-500 hover:underline">
+              Hot Board
+            </Link>
+          </div>
           <button className="md:hidden p-2 text-gray-700">
             <svg
               className="w-6 h-6"

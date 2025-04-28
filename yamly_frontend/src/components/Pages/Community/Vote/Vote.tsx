@@ -59,7 +59,7 @@ const Vote = () => {
               <div
                 key={idx}
                 className={`p-2 bg-white rounded hover:bg-gray-100 cursor-pointer ${
-                  selectedOption === opt ? "bg-blue-100" : ""
+                  selectedOption === opt ? "bg-blue-200" : ""
                 }`}
                 onClick={() => handleOptionClick(opt)}
               >

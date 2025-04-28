@@ -4,8 +4,12 @@ import Vote from "./Vote/Vote";
 const CommunityMain = () => {
   return (
     <>
-      <Vote />
-      <BoardNavigator />
+      <div className="mb-4">
+        <Vote />
+      </div>
+      <div>
+        <BoardNavigator />
+      </div>
     </>
   );
 };
