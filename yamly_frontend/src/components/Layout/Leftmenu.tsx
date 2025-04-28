@@ -34,7 +34,14 @@ const LeftMenu: React.FC = () => {
             >
               <Link
                 to={item.path}
-                className="flex items-center justify-center space-x-3 text-gray-700 hover:text-blue-500 w-full h-full"
+                className={`flex items-center gap-3 flex-col justify-center space-x-3 w-full h-full 
+                ${isHighlighted ? "text-black" : "text-gray-400 hover:text-black"  
+                }`}
+                style={
+                  {wordBreak : "keep-all"}
+
+                }
+                 
               >
                 {item.icon}
                 <span className="text-sm">{item.name}</span>
