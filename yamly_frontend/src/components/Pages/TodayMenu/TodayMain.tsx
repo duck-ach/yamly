@@ -1,8 +1,11 @@
+import MainPersonalMenu from "./MainPersonalMenu";
+
 const TodayMain = () => {
   return (
     <>
-      <h2>TodayMain</h2>
-      <div>Hello TodayMain!!</div>
+      <div>
+        <MainPersonalMenu />
+      </div>
     </>
   );
 };

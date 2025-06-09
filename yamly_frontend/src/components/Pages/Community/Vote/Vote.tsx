@@ -58,8 +58,10 @@ const Vote = () => {
             mockVoteData.options.map((opt, idx) => (
               <div
                 key={idx}
-                className={`p-2 bg-white rounded hover:bg-gray-100 cursor-pointer ${
-                  selectedOption === opt ? "bg-blue-200" : ""
+                className={`p-2 bg-white rounded cursor-pointer ${
+                  selectedOption === opt
+                    ? "bg-gray-300"
+                    : "bg-white hover:bg-gray-100"
                 }`}
                 onClick={() => handleOptionClick(opt)}
               >
