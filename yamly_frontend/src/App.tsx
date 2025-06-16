@@ -1,11 +1,10 @@
 import { Routes, Route } from "react-router-dom";
 import TodayMain from "./components/Pages/TodayMenu/TodayMain";
 import GamesMain from "./components/Pages/Games/GamesMain";
-import CommunityMain from "./components/Pages/Community/CommunityMain";
 import SettingMain from "./components/Pages/Setting/SettingMain";
 import MyPageMain from "./components/Pages/MyPage/MyPageMain";
 import TopMenu from "./components/Layout/TopMenu";
-import LeftMenu from "./components/Layout/LeftMenu";
+import LeftMenu from "./components/Layout/Leftmenu";
 
 function App() {
   return (
@@ -18,7 +17,6 @@ function App() {
             <Routes>
               <Route path="/" element={<TodayMain />} />
               <Route path="/games" element={<GamesMain />} />
-              <Route path="/community" element={<CommunityMain />} />
               <Route path="/mypage" element={<MyPageMain />} />
               <Route path="/setting" element={<SettingMain />} />
             </Routes>

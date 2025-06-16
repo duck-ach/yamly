@@ -1,11 +1,10 @@
 import React, { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { Flame, Gamepad, Users } from "lucide-react";
+import { Flame, Gamepad } from "lucide-react";
 
 const menuItems = [
   { name: "오늘의 메뉴 추천", path: "/", icon: <Flame size={18} /> },
   { name: "메뉴 정하기 게임", path: "/games", icon: <Gamepad size={18} /> },
-  { name: "메뉴 추천 커뮤니티", path: "/community", icon: <Users size={18} /> },
 ];
 
 const LeftMenu: React.FC = () => {
@@ -35,13 +34,12 @@ const LeftMenu: React.FC = () => {
               <Link
                 to={item.path}
                 className={`flex items-center gap-3 flex-col justify-center space-x-3 w-full h-full 
-                ${isHighlighted ? "text-black" : "text-gray-400 hover:text-black"  
+                ${
+                  isHighlighted
+                    ? "text-black"
+                    : "text-gray-400 hover:text-black"
                 }`}
-                style={
-                  {wordBreak : "keep-all"}
-
-                }
-                 
+                style={{ wordBreak: "keep-all" }}
               >
                 {item.icon}
                 <span className="text-sm">{item.name}</span>
