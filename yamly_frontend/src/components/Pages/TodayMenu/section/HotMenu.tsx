@@ -1,5 +1,6 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import type { Food } from "../../../../types/food";
+import { filter } from "framer-motion/client";
 
 const EMOJI = [
   "🍕",
@@ -14,6 +15,10 @@ const EMOJI = [
   "🍤",
   "🍦",
   "🍩",
+  "🍖",
+  "🥐",
+  "🌭",
+  "🥓",
 ];
 
 function getRandomEmoji() {
@@ -65,12 +70,14 @@ const HotMenu = () => {
 
   // 랜덤 뽑기 애니메이션
   const handleRandomPick = () => {
-    if (!filtered.length) return;
+    const targetList = selectedTags.length ? filtered : foods;
+    if (!targetList.length) return;
+
     setRolling(true);
     let count = 0;
     const interval = setInterval(() => {
-      // 롤링 애니메이션 (이름과 이모지 계속 바뀜)
-      const randomFood = filtered[Math.floor(Math.random() * filtered.length)];
+      const randomFood =
+        targetList[Math.floor(Math.random() * targetList.length)];
       setRollingName(
         `${getRandomEmoji()}  ${randomFood.name}  ${getRandomEmoji()}`
       );
