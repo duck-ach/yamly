@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import type { Food } from "../../../../types/food";
-import { filter } from "framer-motion/client";
 
 const EMOJI = [
   "🍕",
