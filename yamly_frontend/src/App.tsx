@@ -4,7 +4,7 @@ import GamesMain from "./components/Pages/Games/GamesMain";
 import SettingMain from "./components/Pages/Setting/SettingMain";
 import MyPageMain from "./components/Pages/MyPage/MyPageMain";
 import TopMenu from "./components/Layout/TopMenu";
-import LeftMenu from "./components/Layout/Leftmenu";
+import LeftMenu from "./components/Layout/LeftMenu";
 
 function App() {
   return (
